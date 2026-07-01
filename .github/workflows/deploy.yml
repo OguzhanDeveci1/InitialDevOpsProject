@@ -46,7 +46,7 @@ jobs:
             sudo docker rm my-devops-app || true
             
             # 2. Docker Hub'dan en güncel imajı çek
-            sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/hello-devops:latest
+            sudo docker pull oguzhandeveci/hello-devops:latest
             
             # 3. Yeni container'ı 3000 portundan ayağa kaldır
-            sudo docker run -d -p 3000:3000 --name my-devops-app ${{ secrets.DOCKERHUB_USERNAME }}/hello-devops:latest
+            sudo docker run -d -p 3000:3000 --name my-devops-app oguzhandeveci/hello-devops:latest
