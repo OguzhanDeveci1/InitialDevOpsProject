@@ -1,0 +1,14 @@
+node_modules
+npm-debug.log
+
+
+terraform/
+.terraform/
+*.tfstate*
+
+
+.git
+.gitignore
+.dockerignore
+.vscode/
+README.md
